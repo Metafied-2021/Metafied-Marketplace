@@ -10,6 +10,10 @@ module.exports = {
 			url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.projectId}`,
 			accounts: [process.env.PRIVATE_KEY],
 		},
+		rinkeby: {
+			url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.projectId}`,
+			accounts: [process.env.PRIVATE_KEY],
+		},
 	},
 	solidity: "0.8.4",
 };
