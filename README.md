@@ -1,4 +1,4 @@
-## This is our Marketplace to create game assets and also to buy assets
+## This is our Marketplace to create game assets and also to buy assets ( Only can be tested after cloning as we have not yet deployed it on Vercel or Firebase)
 Create a dot.env file and put in the Alchemy Id and Private Key to your wallet.
 # Compile it
 npx harhdat compile
