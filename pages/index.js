@@ -17,7 +17,7 @@ export default function Home() {
 
 	async function loadNFTs() {
 		const provider = new ethers.providers.JsonRpcProvider(
-			"https://eth-rinkeby.alchemyapi.io/v2/aOor5clmxa6v3FX86p_NQB22HhNxGyWX"
+			"https://polygon-mumbai.g.alchemy.com/v2/WdDPcNEp13tbJjIVhcDSDgjQe1-l_HSQ"
 		);
 		const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider);
 		const marketContract = new ethers.Contract(
@@ -71,27 +71,31 @@ export default function Home() {
 		);
 
 	return (
-		<div className="flex justify-center">
+		<div className="flex float-left h-screen bg-black w-full">
 			<div className="px-4">
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
 					{nfts.map((nft, i) => (
-						<div key={i} className=" border shadow rounded-xl overflow-hidden">
+						<div
+							key={i}
+							className=" border shadow rounded-xl overflow-hidden bg-slate-200"
+						>
 							<img src={nft.image} alt="loading" />
 							<div className="p-4">
 								<p
-									style={{ height: "100px" }}
-									className="text-2xl font-semibold"
+									style={{ height: "30px" }}
+									className="text-2xl font-semibold text-black"
 								>
 									{nft.name}
 								</p>
 								<div style={{ height: "70px", overflow: "hidden" }}>
-									<p className=" text-gray-400">{nft.description}</p>
+									<p className=" text-grey-800">{nft.description}</p>
 								</div>
-							</div>
-							<div className="p-4 bg-black">
-								<p className=" text-2xl mb-4 font-bold text-white">
-									{nft.price} ETH
+								<p className=" text-xl mb-4 font-bold text-black pl-28">
+									<div className="text-black">{nft.price} MATIC</div>
 								</p>
+							</div>
+
+							<div className="p-4 ">
 								<button
 									className=" w-full bg-sky-400 text-white font-bold py-2 px-12 rounded animate-pulse"
 									onClick={() => buyNFT(nft)}

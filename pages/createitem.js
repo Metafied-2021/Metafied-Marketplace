@@ -136,9 +136,9 @@ function createitem() {
                     focus:text-white focus:bg-black focus:outline-none"
 								aria-label="Default select example"
 							>
-								<option selected>ETH </option>
-								<option value="1">WETH</option>
-								<option value="2">MATIC</option>
+								<option selected>MATIC </option>
+								<option value="1">ETH</option>
+								<option value="2">WETH</option>
 								<option value="3">BNB</option>
 							</select>
 						</div>
