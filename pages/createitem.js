@@ -111,7 +111,7 @@ function createitem() {
 				</div>
 
 				<div className=" text-black pt-3 font-extrabold flex float-left">
-					<div class="flex justify-center pb-3">
+					<div className="flex justify-center pb-3">
 						<div class="mb-3 xl:w-96">
 							<div className=" text-white"> Price</div>
 							<input
@@ -122,7 +122,7 @@ function createitem() {
 								}
 							/>
 							<select
-								class="form-select
+								className="form-select
                     text-base
                     font-normal
                     text-white
@@ -144,18 +144,18 @@ function createitem() {
 						</div>
 					</div>
 				</div>
-				<div class="pt-3 flex float-left mr-60">
-					<div class="rounded-lg shadow-xl bg-black lg:w-1/2">
-						<div class="m-4">
-							<label class="inline-block mb-2 text-blue-500">
+				<div className="pt-3 flex float-left mr-60">
+					<div className="rounded-lg shadow-xl bg-black lg:w-1/2">
+						<div className="m-4">
+							<label className="inline-block mb-2 text-blue-500">
 								Upload Image(jpg,png,svg,jpeg,gif)
 							</label>
-							<div class="flex items-center justify-center w-full">
-								<label class="flex flex-col w-full h-32 border-4 border-dashed hover:bg-black hover:border-blue-300">
-									<div class="flex flex-col items-center justify-center pt-7">
+							<div className="flex items-center justify-center w-full">
+								<label className="flex flex-col w-full h-32 border-4 border-dashed hover:bg-black hover:border-blue-300">
+									<div className="flex flex-col items-center justify-center pt-7">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
-											class="w-12 h-12 text-blue-400 group-hover:text-gray-600"
+											className="w-12 h-12 text-blue-400 group-hover:text-gray-600"
 											viewBox="0 0 20 20"
 											fill="currentColor"
 										>
@@ -165,11 +165,15 @@ function createitem() {
 												clip-rule="evenodd"
 											/>
 										</svg>
-										<p class="pt-1 text-sm tracking-wider text-blue-400 group-hover:text-blue-600">
+										<p className="pt-1 text-sm tracking-wider text-blue-400 group-hover:text-blue-600">
 											Select a file
 										</p>
 									</div>
-									<input type="file" class="opacity-0" onChange={onChange} />
+									<input
+										type="file"
+										className="opacity-0"
+										onChange={onChange}
+									/>
 								</label>
 							</div>
 						</div>
